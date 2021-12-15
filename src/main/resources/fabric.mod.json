@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "simpletexthud",
+  "version": "${version}",
+
+  "name": "Simple Text Hud",
+  "description": "A hud that allows the user to customize it using variables an text.",
+  "authors": [
+    "AreUThreateningMe"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/simpletexthud/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.loucaskreger.simpletexthud.SimpleTextHud"
+    ]
+  },
+  "mixins": [
+    "simpletexthud.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
